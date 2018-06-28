@@ -12,6 +12,10 @@ class Post < ActiveRecord::Base
   def self.create(name,content)
     POSTS<<self.new(name,content)
   end
-  
-    
+
+  def self.all
+    POSTS
+  end
+
+
 end
