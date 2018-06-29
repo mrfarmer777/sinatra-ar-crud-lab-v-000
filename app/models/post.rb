@@ -9,9 +9,7 @@ class Post < ActiveRecord::Base
     @content=opts[:content]
   end
 
-  def self.create(opts)
-    POSTS<<self.new(opts)
-  end
+  
 
 
 
