@@ -26,4 +26,9 @@ class ApplicationController < Sinatra::Base
     #? Does active record have its own all method or is the one we made?
     erb :index
   end
+
+  get "/posts/:id" do
+    @post=Post.find_by_id(:id)
+    erb :show
+  end
 end
