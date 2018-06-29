@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/posts" do
-    #? Does active record have its own all method or is the one we made?    
+    #? Does active record have its own all method or is the one we made?
     erb :index
   end
 end
