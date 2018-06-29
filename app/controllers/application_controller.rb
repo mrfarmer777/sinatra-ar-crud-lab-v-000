@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
   post "/posts" do
     #! Not sure if the create method is working yet
     @post=Post.create(params[:name],params[:content])
-    
+
   end
 
   get "/posts" do
