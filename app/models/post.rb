@@ -13,7 +13,7 @@ class Post < ActiveRecord::Base
     POSTS<<self.new(name,content)
   end
 
-  
+
 
 
 end
