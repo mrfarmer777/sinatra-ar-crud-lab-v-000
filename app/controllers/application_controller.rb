@@ -29,7 +29,7 @@ class ApplicationController < Sinatra::Base
 
   get "/posts/:id" do
     #? Is it better to do this here or in the ERB?
-    @post=Post.find_by(params)
+    @post=Post.find_by(id: :id)
     erb :show
   end
 end
