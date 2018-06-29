@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
   post "/posts" do
     #! Create method is part of ActiveRecord already, silly!
     Post.create(params[:name],params[:content])
-    
+
   end
 
   get "/posts" do
