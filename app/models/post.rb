@@ -13,9 +13,7 @@ class Post < ActiveRecord::Base
     POSTS<<self.new(name,content)
   end
 
-  def self.all
-    POSTS
-  end
+  
 
 
 end
