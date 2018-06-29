@@ -17,9 +17,9 @@ class ApplicationController < Sinatra::Base
   end
 
   post "/posts" do
-    #! Not sure if the create method is working yet
-    @post=Post.create(params[:name],params[:content])
-
+    #! Create method is part of ActiveRecord already, silly!
+    Post.create(params[:name],params[:content])
+    
   end
 
   get "/posts" do
