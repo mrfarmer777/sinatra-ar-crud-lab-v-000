@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
     @content=opts[:content]
   end
 
-  
+
 
 
 
